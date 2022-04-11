@@ -1478,10 +1478,13 @@ ol {
 	
 }
 
+.shadow-col-4 {
+	box-shadow: 0 3px 14px rgb(0 0 0 / 7%);
+}
+
 .col-lg-4 {
 	padding: 10px 12px;
 	border-radius: 3px;
-	box-shadow: 0 3px 14px rgb(0 0 0 / 7%);
 	vertical-align: baseline;
 	
 }
@@ -1493,16 +1496,16 @@ ol {
 
 
 @media only screen and (max-width: 481px) {
-    .col-lg-4 {
+    .con-shadow {
         min-width:250px;
         padding: 7px 10px
     }
 }
-.col-lg-4:hover {
+
+.con-shadow:hover {
 	padding: 10px 12px;
 	border-radius: 3px;
 	box-shadow: 0 3px 14px rgba(0, 0, 0, 0.404);
-	
 }
 
 .product__discount__slider.owl-carousel .owl-dots {
