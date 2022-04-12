@@ -140,7 +140,7 @@ ol {
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position: top center;
 }
 
@@ -1122,7 +1122,7 @@ ol {
 }
 
 .categorias {
-	display: none;
+	display: block;
 	height: 470px;
 	overflow: auto;
 	margin-bottom: 80px;
@@ -3109,6 +3109,11 @@ ol {
 /* Tablet Device = 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.categorias {
+		display: none;
+	}
+
 	.hero__categories {
 		margin-bottom: 30px;
 	}
@@ -3347,6 +3352,11 @@ ol {
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
+	
+	.categorias {
+		display: none;
+	}
+
 	.hero__categories {
 		margin-bottom: 30px;
 	}
