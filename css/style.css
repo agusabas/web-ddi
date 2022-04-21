@@ -1001,7 +1001,7 @@ ol {
 }
 
 .buy-buttom{
-	display: flex;
+	display: block;
 	justify-content: center;
  	align-items: center;
 }
@@ -1027,18 +1027,64 @@ ol {
   Boton de compra nuevo!
 -----------------------*/
 
-.nuevo-boton-compra {  display: grid;
-	grid-template-columns: 0.6fr 2fr;
-	grid-template-rows: 0.3fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "cantidad comprar";
+.nuevo-boton-compra {
+	display: grid; 
+	grid-template-columns: 0.6fr 2fr; 
+	grid-template-rows: 0.3fr; 
+	gap: 0px 0px; 
+	justify-content: center;
+	grid-template-areas: 
+	  "cantidad comprar"; 
   }
   
-  .cantidad { grid-area: cantidad; }
+.cantidad { 
+	width: 70px;
+	height: 50px;
+	display: grid; 
+	grid-template-columns: 45px 0px; 
+	grid-template-rows: 50% 50%; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+	  "input input up-row"
+	  "input input down-row"; 
+	grid-area: cantidad; 
+	border-radius: 3px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: rgba(226, 226, 226, 1);
+   }
+
+.input { grid-area: input; }
+.up-row { 
+	grid-area: up-row; 
+	align-items: center;
+	justify-content: center;
+	color: rgba(105, 105, 115, 1);
+    background-color: rgba(238, 238, 238, 1);
+	z-index: 10;
+	right: 0;
+    top: 0;
+	border-color: inherit;
+    border-style: inherit;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+.down-row { 
+	grid-area: down-row;
+	color: rgba(105, 105, 115, 1);
+    background-color: rgba(238, 238, 238, 1);
+	z-index: 10;
+	right: 0;
+    top: 0;
+	border-color: inherit;
+    border-style: inherit;
+	border-bottom: none;
+	border-right: none;
+
+}
   
-  .comprar { grid-area: comprar; }
+.comprar { grid-area: comprar; }
   
 
 
@@ -1052,7 +1098,6 @@ ol {
 }
 
 .buy-buttom .quantity .pro-qty .qtybtn{
-	
 }
 
 .buy-buttom .quantity .pro-qty input{
@@ -1928,14 +1973,9 @@ ol {
 	margin-bottom: 5px;
 }
 .new-pro-qty {
-	width: 140px;
-	height: 50px;
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	background: #f5f5f5;
-	margin-bottom: 5px;
+	
 }
+
 
 .pro-qty input {
 	height: 100%;
@@ -1949,14 +1989,10 @@ ol {
 }
 
 .new-pro-qty input {
-	height: 100%;
-	width: 100%;
-	font-size: 16px;
-	color: #6f6f6f;
-	width: 50px;
-	border: none;
-	background: #f5f5f5;
+	height: 45px;
 	text-align: center;
+	background: rgba(255, 255, 255, 1) !important;
+    border-width: 0px !important;
 }
 
 .pro-qty .qtybtn {
@@ -1968,11 +2004,12 @@ ol {
 }
 
 .new-pro-qty .qtybtn {
-	width: 35px;
+	width: 20px;
 	font-size: 16px;
 	color: #6f6f6f;
 	cursor: pointer;
 	display: inline-block;
+	text-align: center;
 }
 
 .product__details__tab {

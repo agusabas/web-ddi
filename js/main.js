@@ -224,8 +224,8 @@
 		Quantity change
 	--------------------- */
     var proQty = $('.new-pro-qty');
-    proQty.prepend('<span class="dec qtybtn">-</span>');
-    proQty.append('<span class="inc qtybtn">+</span>');
+    proQty.append('<span class="inc qtybtn up-row">+</span>');
+    proQty.prepend('<span class="dec qtybtn down-row">-</span>');
     proQty.on('click', '.qtybtn', function () {
         var $button = $(this);
         var oldValue = $button.parent().find('input').val();
