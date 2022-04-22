@@ -220,4 +220,27 @@
         $button.parent().find('input').val(newVal);
     });
 
+    /*-------------------
+		Quantity change
+	--------------------- */
+    var proQty = $('.new-pro-qty');
+    proQty.append('<span class="inc qtybtn up-row">+</span>');
+    proQty.prepend('<span class="dec qtybtn down-row">-</span>');
+    proQty.on('click', '.qtybtn', function () {
+        var $button = $(this);
+        var oldValue = $button.parent().find('input').val();
+        if ($button.hasClass('inc')) {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 0;
+            }
+        }
+        $button.parent().find('input').val(newVal);
+    });
+
+
 })(jQuery);
