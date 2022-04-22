@@ -1057,6 +1057,7 @@ ol {
 .input { grid-area: input; }
 .up-row { 
 	grid-area: up-row; 
+	border-top-right-radius: 3px;
 	align-items: center;
 	justify-content: center;
 	color: rgba(105, 105, 115, 1);
@@ -1064,11 +1065,8 @@ ol {
 	z-index: 10;
 	right: 0;
     top: 0;
-	border-color: inherit;
-    border-style: inherit;
-	border-top: none;
-	border-bottom: none;
-	border-right: none;
+    border-left: solid rgba(226, 226, 226, 1);
+	border-bottom: solid rgba(226, 226, 226, 1);
 }
 .down-row { 
 	grid-area: down-row;
@@ -1077,11 +1075,8 @@ ol {
 	z-index: 10;
 	right: 0;
     top: 0;
-	border-color: inherit;
-    border-style: inherit;
-	border-bottom: none;
-	border-right: none;
-
+	border-bottom-right-radius: 3px;
+	border-left: solid rgba(226, 226, 226, 1);
 }
   
 .comprar { grid-area: comprar; }
@@ -1989,7 +1984,7 @@ ol {
 }
 
 .new-pro-qty input {
-	height: 45px;
+	height: 44px;
 	text-align: center;
 	background: rgba(255, 255, 255, 1) !important;
     border-width: 0px !important;
@@ -2004,7 +1999,6 @@ ol {
 }
 
 .new-pro-qty .qtybtn {
-	width: 20px;
 	font-size: 16px;
 	color: #6f6f6f;
 	cursor: pointer;
