@@ -1190,6 +1190,10 @@ ol {
   Sidebar
 -----------------------*/
 
+.ocultar {
+	display: none;
+}
+
 .sidebar__item {
 	margin-bottom: 35px;
 }
@@ -1204,7 +1208,7 @@ ol {
 .categorias2 {
 	height: 470px;
 	overflow: auto;
-	margin-bottom: 130px;
+	margin-bottom: 50px;
 }
 
 .barraAgu::-webkit-scrollbar {
@@ -1408,7 +1412,7 @@ ol {
 }
 
 .product__discount {
-	padding-bottom: 50px;
+	
 }
 
 .product__discount__title {
