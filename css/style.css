@@ -70,7 +70,7 @@ h5 {
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 12px;
 }
 
 p {
@@ -640,13 +640,18 @@ ol {
 	display: block;
 }
 
+.barraBusqueda > form {
+    margin-left: 2px;
+    align-items: center;
+    display: inline-flex;
+}
+
 .hero__search {
-	overflow: hidden;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
 }
 
 .hero__search__form {
-	width: 610px;
+	width: 630px;
 	height: 50px;
 	border: 1px solid #ebebeb;
 	position: relative;
@@ -715,10 +720,11 @@ ol {
 	text-align: center;
 	border-radius: 50%;
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .hero__search__phone__text {
+    padding-top: 8px;
 	overflow: hidden;
 }
 
@@ -3176,7 +3182,7 @@ ol {
 		margin-right: 45px;
 	}
 	.hero__search__form {
-		width: 490px;
+		width: 500px;
 	}
 	.hero__categories__all {
 		padding: 10px 25px 10px 20px;

@@ -9,13 +9,13 @@
   display: block;
   float: left;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   height: 42px;
   line-height: 40px;
   outline: none;
-  padding-left: 18px;
-  padding-right: 30px;
+  padding-left: 6px;
+  padding-right: 22px;
   position: relative;
   text-align: left !important;
   -webkit-transition: all 0.2s ease-in-out;

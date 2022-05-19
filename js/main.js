@@ -29,6 +29,30 @@
             var mixer = mixitup(containerEl);
         }
     });
+    
+
+
+    /*------------------
+        Barra de busqueda
+    --------------------*/
+    $('#categorySelectorContainer').find("select").on('change', function(event) {
+        event.preventDefault();
+        var article_category = $(this).val();
+        $modalResult = $('#SelectorContainercategory2');
+        $.ajax({
+            type: 'GET',
+            url: 'article-category2-select.php',
+            beforeSend: function(){
+                $modalResult.html('<span class="loaderSmall"></span>');
+            },
+            data: {queryString: encodeData([{'article_category': article_category}])},
+            dataType: 'html',
+            success: function(htmlData){
+                $modalResult.html(htmlData);
+            }
+        });
+    });
+
 
     /*------------------
         Background Set
