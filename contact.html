@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -159,12 +160,25 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="hero__search">
-                        <div class="hero__search__form">
-                            <form action="#">
-                                <div class="hero__search__categories">
-                                    Categorías
-                                    <span class="arrow_carrot-down"></span>
-                                </div>
+                        <div class="hero__search__form barraBusqueda">
+                            <form name="form1" id="form1" action="#">
+                                <select class="nice-select" name="subject" id="subject">
+                                    <option value="" selected="selected">Rubro</option>
+                                    <option value="" >ADHESIVOS P-PROTESIS DENTALES</option>
+                                    <option value="" >AFTER SHAVE</option>
+                                    <option value="" >AGUA OXIGENADA</option>
+                                    <option value="" >APARATOS Y REP LIQUIDOS</option>
+                                    <option value="" >ALGODON</option>
+                                </select>
+                                
+                                <select name="topic" id="topic">
+                                    <option value="" selected="selected">Marca</option>
+                                    <option value="" >ADHESIVOS P-PROTESIS DENTALES</option>
+                                    <option value="" >AFTER SHAVE</option>
+                                    <option value="" >AGUA OXIGENADA</option>
+                                    <option value="" >APARATOS Y REP LIQUIDOS</option>
+                                    <option value="" >ALGODON</option>
+                                </select>
                                 <input type="text" placeholder="Nombre artículo...">
                                 <button type="submit" class="site-btn">Buscar</button>
                             </form>
@@ -174,7 +188,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+54 99999999</h5>
+                                <h6>+54 99999999</h6>
                                 <span>Lunes a Sábados</span>
                             </div>
                         </div>
