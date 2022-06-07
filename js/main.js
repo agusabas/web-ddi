@@ -29,25 +29,29 @@
             var mixer = mixitup(containerEl);
         }
     });
-    
+
 
 
     /*------------------
         Barra de busqueda
     --------------------*/
-    $('#categorySelectorContainer').find("select").on('change', function(event) {
+    $('#categorySelectorContainer').find("select").on('change', function (event) {
         event.preventDefault();
         var article_category = $(this).val();
         $modalResult = $('#SelectorContainercategory2');
         $.ajax({
             type: 'GET',
             url: 'article-category2-select.php',
-            beforeSend: function(){
+            beforeSend: function () {
                 $modalResult.html('<span class="loaderSmall"></span>');
             },
-            data: {queryString: encodeData([{'article_category': article_category}])},
+            data: {
+                queryString: encodeData([{
+                    'article_category': article_category
+                }])
+            },
             dataType: 'html',
-            success: function(htmlData){
+            success: function (htmlData) {
                 $modalResult.html(htmlData);
             }
         });
@@ -122,7 +126,7 @@
     });
 
 
-    $('.hero__categories__all').on('click', function(){
+    $('.hero__categories__all').on('click', function () {
         $('.hero__categories ul').slideToggle(400);
     });
 
