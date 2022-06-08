@@ -302,26 +302,28 @@
                                 </ul>
                                 <div class="checkout__order__subtotal">Subtotal <span>$750.99</span></div>
                                 <div class="checkout__order__total">Total <span>$750.99</span></div>
-                                <div>
-                                    <label>
-                                        <input type="radio" name="option" value="Yes" id="Efectivo en el Local" />
-                                        Efectivo en el Local
-                                    </label>
-                                </div>
-                                <p>Consulta nuestras sucursales <br>
-                                    disponibles <a href="./contact.html">aquí</a></p>
-                                <div class="">
-                                    <label>
-                                        <input type="radio" name="option" value="Yes" id="transferencia" />
-                                        Transferencia Bancaria
-                                    </label>
-                                </div>
-                                <div>
-                                    <label>
-                                        <input type="radio" name="option" value="Yes" id="mercadopago" /> Mercado Pago
-                                    </label>
-                                </div>
-                                <button type="submit" class="site-btn">Realizar Pedido</button>
+                                <form action="Metodo_de_Pago" method="get">
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="option" value="Yes" id="Efectivo en el Local" />
+                                            Efectivo en el Local
+                                        </label>
+                                    </div>
+                                    <p>Consulta nuestras sucursales <br>
+                                        disponibles <a href="./contact.html">aquí</a></p>
+                                    <div class="">
+                                        <label>
+                                            <input type="radio" name="option" value="Yes" id="transferencia" />
+                                            Transferencia Bancaria
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="option" value="Yes" id="mercadopago" /> Mercado Pago
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="site-btn">Realizar Pedido</button>
+                                </form>
                             </div>
                         </div>
                     </div>
