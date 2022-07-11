@@ -13,10 +13,10 @@
     for (i = 0; i < slides.length; i++) {
         slides[i] = document.getElementsByClassName('miSlider'+i);
         arrayBarras[i] = document.getElementsByClassName('barra'+i);
-        for(let j = 0; j < 3; j++){
+        for(let j = 0; j < slides[i].length; j++){
             slides[i][j].style.display = 'none';
         }
-        for(let j = 0; j < 3; j++){
+        for(let j = 0; j < slides[i].length; j++){
             arrayBarras[i][j].className = arrayBarras[i][j].className.replace(" barraActive", "");
         }
         slides[i][indice-1].style.display = 'block';
@@ -36,17 +36,16 @@
     },4000);*/
 
     function muestraSlides(n, id) {
-        console.log(n,id)
-        if(n > 3){
+        if(n > slides[id].length){
             indice = 1;
         }
         if(n < 1){
             indice = 2;
         }
-        for(i = 0; i < 3; i++){
+        for(i = 0; i < slides[id].length; i++){
             slides[id][i].style.display = 'none';
         }
-        for(i = 0; i < 3; i++){
+        for(i = 0; i < slides[id].length; i++){
             arrayBarras[id][i].className = arrayBarras[id][i].className.replace(" barraActive", "");
         }
     
